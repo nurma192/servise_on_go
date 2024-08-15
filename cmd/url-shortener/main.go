@@ -2,9 +2,12 @@ package main
 
 import (
 	"fmt"
+	_ "github.com/lib/pq"
 	"log/slog"
 	"os"
 	"service_on_go/internal/config"
+	"service_on_go/internal/lib/logger/sl"
+	"service_on_go/internal/storage/postgresql"
 )
 
 const (
@@ -26,6 +29,14 @@ func main() {
 	log.Debug("Debug messages enabled")
 
 	// TODO: init storage: postgresql, gorm
+	storage, err := postgresql.New()
+
+	if err != nil {
+		log.Error("Failed to init storage", sl.Err(err))
+		os.Exit(1)
+	}
+
+	fmt.Println(storage)
 
 	// TODO: init router: chi, "chi render"
 

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bcb2820-1466-4c3e-83ba-891e3914d045" name="Changes" comment="" />
+    <list default="true" id="8bcb2820-1466-4c3e-83ba-891e3914d045" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/url-shortener/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/url-shortener/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/storage/models/models.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/storage/models/models.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/storage/postgresql/postgresql.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/storage/postgresql/postgresql.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "nurma192"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/nurma192/servise_on_go",
+    "accountId": "7d6896dd-bbe1-4a7b-a9d4-30f842039e98"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -37,7 +54,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
     "last_opened_file_path": "/Users/nurmakhanbetkenes/Desktop/Mine Folder/Go_Learn/Go_Projects/service_on_go",
@@ -49,6 +68,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/internal/storage/models" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>

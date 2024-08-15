@@ -35,3 +35,11 @@ func (s *Storage) SaveUrl(url string, alias string) (uint, error) {
 
 	return newShortUrl.Id, s.db.Create(newShortUrl).Error
 }
+
+func (s *Storage) GetUrl() {
+
+}
+
+func (s *Storage) DeleteUrl() {
+
+}

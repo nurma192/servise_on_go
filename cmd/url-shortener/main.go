@@ -36,21 +36,27 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Println(storage)
+	fmt.Println("Storage created: ", storage)
 
-	err = storage.SaveUrl("https://google.com", "google3")
-	if err != nil {
-		log.Error("failed to save url", sl.Err(err))
-		os.Exit(1)
-	}
+	//_, err = storage.SaveUrl("google.com", "google")
+	//if err != nil {
+	//	log.Info("", sl.Err(err))
+	//}
+	//_, err = storage.SaveUrl("google.com", "google2")
+	//if err != nil {
+	//	log.Info("", sl.Err(err))
+	//}
+	//_, err = storage.SaveUrl("google.com", "google3")
+	//if err != nil {
+	//	log.Info("", sl.Err(err))
+	//}
+	//_, err = storage.SaveUrl("google.com", "yandex")
+	//if err != nil {
+	//	log.Info("", sl.Err(err))
+	//}
 
-	log.Info("url saved to db")
-
-	err = storage.SaveUrl("https://google.com", "google2")
-	if err != nil {
-		log.Error("failed to save url", sl.Err(err))
-		os.Exit(1)
-	}
+	url, err := storage.GetUrl("yandex")
+	fmt.Println(url)
 
 	// TODO: init router: chi, "chi render"
 

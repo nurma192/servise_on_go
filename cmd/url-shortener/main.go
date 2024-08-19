@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"
 	"log/slog"
 	"os"
@@ -18,6 +19,7 @@ const (
 
 func main() {
 	// TODO: init config: cleanEnv
+	//configPath := "./config/local.yaml"
 	cfg := config.MustLoad()
 	fmt.Println(cfg)
 
@@ -38,27 +40,11 @@ func main() {
 
 	fmt.Println("Storage created: ", storage)
 
-	//_, err = storage.SaveUrl("google.com", "google")
-	//if err != nil {
-	//	log.Info("", sl.Err(err))
-	//}
-	//_, err = storage.SaveUrl("google.com", "google2")
-	//if err != nil {
-	//	log.Info("", sl.Err(err))
-	//}
-	//_, err = storage.SaveUrl("google.com", "google3")
-	//if err != nil {
-	//	log.Info("", sl.Err(err))
-	//}
-	//_, err = storage.SaveUrl("google.com", "yandex")
-	//if err != nil {
-	//	log.Info("", sl.Err(err))
-	//}
+	// TODO: init router: gin
+	router := gin.Default()
 
-	url, err := storage.GetUrl("yandex")
-	fmt.Println(url)
-
-	// TODO: init router: chi, "chi render"
+	// middleware
+	router.Use()
 
 	// TODO: run server
 

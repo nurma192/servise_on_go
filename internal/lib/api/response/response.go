@@ -43,10 +43,9 @@ func ValidationError(errs validator.ValidationErrors) Response {
 
 		}
 
-		return Response{
-			Status: StatusError,
-			Error:  strings.Join(errMsgs, ","),
-		}
-
+	}
+	return Response{
+		Status: StatusError,
+		Error:  strings.Join(errMsgs, ","),
 	}
 }

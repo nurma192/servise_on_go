@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bcb2820-1466-4c3e-83ba-891e3914d045" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/internal/http-server/handlers/url/save/save.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/lib/api/response/response.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/lib/logger/handler/slogpretty/slogpretty.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_08_2024,_22_40_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_08_2024__22_40__Changes_1.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/lib/random/random_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/url-shortener/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/url-shortener/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/http-server/handlers/url/save/save.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/http-server/handlers/url/save/save.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/http-server/middleware/logger/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/http-server/middleware/logger/logger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/lib/api/response/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/lib/api/response/response.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +56,7 @@
   "keyToString": {
     "DefaultGoTemplateProperty": "Go Application",
     "Go Build.go build service_on_go/cmd/url-shortener.executor": "Run",
+    "Go Test.TestNewRandomString in service_on_go/internal/lib/random.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
@@ -79,7 +78,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build service_on_go/cmd/url-shortener">
     <configuration name="go build service_on_go/cmd/url-shortener" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="service_on_go" />
       <working_directory value="$PROJECT_DIR$" />
@@ -92,9 +91,22 @@
       <filePath value="$PROJECT_DIR$/cmd/url-shortener/main.go" />
       <method v="2" />
     </configuration>
+    <configuration name="TestNewRandomString in service_on_go/internal/lib/random" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="service_on_go" />
+      <working_directory value="$PROJECT_DIR$/internal/lib/random" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="service_on_go/internal/lib/random" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestNewRandomString\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build service_on_go/cmd/url-shortener" />
+        <item itemvalue="Go Test.TestNewRandomString in service_on_go/internal/lib/random" />
       </list>
     </recent_temporary>
   </component>

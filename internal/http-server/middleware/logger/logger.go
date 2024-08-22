@@ -17,6 +17,9 @@ func New(log *slog.Logger) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		// Generate a unique request ID
 		requestID := uuid.New().String()
+
+		//log.Info("RequestID", requestID)
+
 		c.Set("RequestID", requestID)
 		c.Header("X-Request-ID", requestID)
 

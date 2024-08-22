@@ -5,8 +5,10 @@ import (
 	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"
 	"golang.org/x/exp/slog"
+	"net/http"
 	"os"
 	"service_on_go/internal/config"
+	"service_on_go/internal/http-server/handlers/url/save"
 	"service_on_go/internal/http-server/middleware/logger"
 	"service_on_go/internal/lib/logger/handler/slogpretty"
 	"service_on_go/internal/lib/logger/sl"
@@ -51,7 +53,24 @@ func main() {
 	router.Use(gin.Recovery())
 	router.Use(logger.New(log))
 
+	router.POST("/url", save.New(log, storage))
+
 	// TODO: run server
+
+	srv := &http.Server{
+		Addr:         cfg.Address,
+		Handler:      router,
+		ReadTimeout:  cfg.HTTPServer.Timeout,
+		WriteTimeout: cfg.HTTPServer.Timeout,
+		IdleTimeout:  cfg.HTTPServer.IdleTimeout,
+	}
+
+	log.Info("starting server", slog.String("address", cfg.Address))
+	if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
+		log.Error("failed to start server")
+	}
+
+	log.Error("server stopped")
 
 }
 
